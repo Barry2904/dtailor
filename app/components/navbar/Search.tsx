@@ -20,8 +20,8 @@ const Searchbar: FC = () => {
                 xmlns="http://www.w3.org/2000/svg" 
                 viewBox="0 0 24 24" 
                 fill="none" 
-                stroke="currentColor" 
-                strokeWidth="2" 
+                stroke="grey" 
+                strokeWidth="2.5" 
                 strokeLinecap="round" 
                 strokeLinejoin="round" 
                 style={styles.searchIcon}
@@ -37,7 +37,7 @@ const styles = {
     searchContainer: {
         display: 'flex',
         alignItems: 'center',
-        border: '1px solid lightgrey',
+        border: '2px solid #A4D3F5',
         borderRadius: '25px',
         padding: '5px 10px',
         width: '300px',

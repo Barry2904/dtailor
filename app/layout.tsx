@@ -55,8 +55,8 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NavBar />
-        {/* <div className="pt-30" style={{ display: 'flex', height: '100vh' }}> */}
-        <div style={{ paddingTop: '6.3rem', display: 'flex', height: '100%' }}>
+        {/* <div className="pt-30" style={{display: 'flex', height: '100vh' }}> */}
+        <div style={{paddingTop: '6.3rem', display: 'flex', height: '100%',}}>
           <Sidebar />
           <div style={{ flex: 1, padding: '20px', overflowY: 'auto' }}>
             {/* <Content /> */}

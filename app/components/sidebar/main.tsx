@@ -71,7 +71,8 @@ const Sidebar: React.FC = () => {
   ];
 
   return (
-    <div style={{ width: '15%', backgroundColor: '#A4D3F5', padding: '20px', height: '100%', overflowY: 'auto' }}>
+    // <div style={{ width: '15%', backgroundColor: '#A4D3F5', padding: '20px', height: '100%', overflowY: 'auto' }}>
+      <div className="md:w-[17rem] md:min-w-[17rem] md:sticky md:left-1 md:pt-8 bg-custom-blue">
       {sections.map((section) => (
         <details key={section.heading} style={{ marginBottom: '10px' }} open>
           <summary style={{ cursor: 'pointer', fontSize: '1.2em' }}>{section.heading}</summary>

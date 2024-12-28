@@ -62,19 +62,27 @@ const CodeBlock: React.FC = () => {
 };
 
 const InfoSection: React.FC = () => {
+  const exportToPDF = () => {
+    window.print();
+  };
+
   return (
-    <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-lg">
+    <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-lg relative">
+      <button 
+        onClick={exportToPDF} 
+        className="absolute top-4 right-4 flex items-center bg-blue-600 hover:bg-blue-500 text-white font-medium py-2 px-3 rounded-md shadow">
+        {/* <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M12 8v4m0 0v4m0-4H8m4 0h4M16 16.01l.01-.011M12 20.01l.01-.011M8 16.01l.01-.011M4 12.01l.01-.011M20 12.01l.01-.011M16 8.01l.01-.011M8 8.01l.01-.011M12 4.01l.01-.011"></path>
+        </svg> */}
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 mr-2">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+        </svg>
+        Export to PDF
+      </button>
       <h1 className="text-4xl font-extrabold text-blue-800 mb-4">Sub-heading 1.1</h1>
       <p className="text-lg text-gray-700 mb-6">
         Discover the key benefits and features of our services below.
       </p>
-
-      <ul className="list-disc list-inside space-y-3">
-        <li className="text-lg font-medium text-blue-700">User-friendly Interface</li>
-        <li className="text-lg font-medium text-blue-700">High Performance</li>
-        <li className="text-lg font-medium text-blue-700">24/7 Customer Support</li>
-        <li className="text-lg font-medium text-blue-700">Advanced Security Features</li>
-      </ul>
 
       <ul className="list-disc list-inside space-y-3">
         <li className="text-lg font-medium text-blue-700">User-friendly Interface</li>
@@ -101,7 +109,6 @@ const InfoSection: React.FC = () => {
 export default InfoSection;
 
 
-  
   
   
   

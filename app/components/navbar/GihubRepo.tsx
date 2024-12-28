@@ -1,8 +1,8 @@
 const GithunRepo = () =>{
     return(
-        <div className="p-2 relative inline-block border rounder-full">
+        <div className="p-2 relative inline-block border-2 border-custom-blue rounded-full">
             <a 
-            href="https://github.com/your-github-username" 
+            href="https://github.com/Barry2904/dtailor" 
             target="_blank" 
             rel="noopener noreferrer" 
             aria-label="GitHub Profile"
