@@ -13,7 +13,7 @@ const Searchbar: FC = () => {
         <div style={styles.searchContainer}>
             <input 
                 type="text" 
-                placeholder="Search..." 
+                placeholder="Need help finding something?" 
                 style={styles.searchInput} 
             />
             <svg 
@@ -37,10 +37,10 @@ const styles = {
     searchContainer: {
         display: 'flex',
         alignItems: 'center',
-        border: '2px solid #A4D3F5',
+        border: '2px solid #1E40AF',//A4D3F5
         borderRadius: '25px',
         padding: '5px 10px',
-        width: '300px',
+        width: '500px',
         backgroundColor: 'white',
     },
     searchInput: {

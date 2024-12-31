@@ -19,9 +19,9 @@ const NavBar = () => {
                         />
                     </Link>
 
+                    <Searchbar/>
 
                     <div className='flex items-center space-x-6'>
-                        <Searchbar/>
                         <GithunRepo />
                         <UserNav />
                     </div>

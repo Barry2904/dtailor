@@ -1,6 +1,6 @@
 const GithunRepo = () =>{
     return(
-        <div className="p-2 relative inline-block border-2 border-custom-blue rounded-full">
+        <div className="p-2 relative inline-block border-2 rounded-full"  style={{ borderColor: '#1E40AF' }}>
             <a 
             href="https://github.com/Barry2904/dtailor" 
             target="_blank" 

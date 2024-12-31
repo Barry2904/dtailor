@@ -1,23 +1,11 @@
-// const Sidebar = () => {
-//     return (
-//       <div style={{ display: 'flex', height: '100vh' }}>
-//         {/* Sidebar */}
-//         {/* <div style={{ flex: 2, backgroundColor: '#A4D3F5', padding: '20px' }}> */}
-//         <div style={{ width: '20%', backgroundColor: '#A4D3F5', padding: '20px' }}>
-//           <p>Sidebar (20%)</p>
-//         </div>
-  
-//         {/* Main Content */}
-//         {/* <div style={{ flex: 8, backgroundColor: '#ffffff', padding: '20px' }}>
-//           <p>Main Content (80%)</p>
-//         </div> */}
-//       </div>
-//     );
-//   };
-  
-//   export default Sidebar;
+"use client";
+import { useState } from 'react';
 
-const Sidebar: React.FC = () => {
+const Sidebar = () => {
+  const [selected, setSelected] = useState<string | null>(null);
+  const handleClick = (title: string) => {
+    setSelected(title);  // Set selected item
+  };
   const sections = [
     {
       heading: "Heading 1",
@@ -70,16 +58,48 @@ const Sidebar: React.FC = () => {
     // Add more sections as needed #E7F1FF #A4D3F5
   ];
 
+  // return (
+  //   // <div style={{ width: '15%', backgroundColor: '#A4D3F5', padding: '20px', height: '100%', overflowY: 'auto' }}>
+  //     <div className="md:w-[17rem] md:min-w-[17rem] md:sticky md:left-1 md:pt-8 bg-custom-blue">
+  //     {sections.map((section) => (
+  //       <details key={section.heading} style={{ marginBottom: '10px' }} open>
+  //         <summary style={{ cursor: 'pointer', fontSize: '1.2em' }}>{section.heading}</summary>
+  //         <ul style={{ paddingLeft: '20px', marginTop: '5px' }}>
+  //           {section.subHeadings.map((subHeading) => (
+  //             <li key={subHeading.title}>
+  //               <a href={subHeading.link} style={{ textDecoration: 'none', color: '#000' }}>
+  //                 {subHeading.title}
+  //               </a>
+  //             </li>
+  //           ))}
+  //         </ul>
+  //       </details>
+  //     ))}
+  //   </div>
+  // );
+  
   return (
-    // <div style={{ width: '15%', backgroundColor: '#A4D3F5', padding: '20px', height: '100%', overflowY: 'auto' }}>
-      <div className="md:w-[17rem] md:min-w-[17rem] md:sticky md:left-1 md:pt-8 bg-custom-blue">
-      {sections.map((section) => (
-        <details key={section.heading} style={{ marginBottom: '10px' }} open>
-          <summary style={{ cursor: 'pointer', fontSize: '1.2em' }}>{section.heading}</summary>
-          <ul style={{ paddingLeft: '20px', marginTop: '5px' }}>
-            {section.subHeadings.map((subHeading) => (
-              <li key={subHeading.title}>
-                <a href={subHeading.link} style={{ textDecoration: 'none', color: '#000' }}>
+    <div className="w-[20%] h-[100%] sticky left-0 pt-8 shadow-lg overflow-y-auto bg-blue-50 border-r border-blue-200">
+      {sections.map((section, index) => (
+        <details key={index} className="mb-4 border border-blue-200 rounded-lg" open={index === 0}>
+          <summary className="cursor-pointer text-xl font-bold px-6 py-4 bg-blue-100 rounded-t-lg hover:bg-blue-200 transition duration-200">
+            {section.heading}
+          </summary>
+          <ul className="px-10 py-3 space-y-3">
+            {section.subHeadings.map((subHeading, subIndex) => (
+              <li 
+                key={`${index}-${subIndex}`}  // Ensure unique and stable keys
+                onClick={() => handleClick(subHeading.title)}
+                className={`text-md hover:text-blue-700 transition duration-150 rounded-lg font-bold ${
+                  selected === subHeading.title ? 'bg-blue-100 underline' : ''
+                }`}
+              >
+                <a
+                  href={subHeading.link}
+                  className={`block px-4 py-2 rounded-md ${
+                    selected === subHeading.title ? 'bg-blue-100 underline' : 'hover:bg-blue-100 hover:underline text-gray-800'
+                  }`}
+                >
                   {subHeading.title}
                 </a>
               </li>
@@ -91,10 +111,4 @@ const Sidebar: React.FC = () => {
   );
 };
 
-export default Sidebar;
-
-
-
-
-
-  
+export default Sidebar; 
