@@ -8,53 +8,52 @@ const Sidebar = () => {
   };
   const sections = [
     {
-      heading: "Heading 1",
+      heading: "Welcome",
       subHeadings: [
-        { title: "Sub-heading 1.1", link: "/heading1/sub1" },
-        { title: "Sub-heading 1.2", link: "/heading1/sub2" },
-        { title: "Sub-heading 1.3", link: "/heading1/sub3" }
+        { title: "Table of Content", link: "/heading1/sub1" },
+        { title: "Core Concepts", link: "/heading1/sub2" },
+        { title: "Release Notes", link: "/heading1/sub3" }
       ]
     },
     {
-      heading: "Heading 2",
+      heading: "Getting Started with Andromeda Security",
       subHeadings: [
-        { title: "Sub-heading 2.1", link: "/heading2/sub1" },
-        { title: "Sub-heading 2.2", link: "/heading2/sub2" },
-        { title: "Sub-heading 2.3", link: "/heading2/sub3" }
+        // { title: "Sub-heading 2.1", link: "/heading2/sub1" },
+        // { title: "Sub-heading 2.2", link: "/heading2/sub2" },
+        // { title: "Sub-heading 2.3", link: "/heading2/sub3" }
       ]
     },
     {
-      heading: "Heading 3",
+      heading: "Navigating the UI",
       subHeadings: [
-        { title: "Sub-heading 2.1", link: "/heading2/sub1" },
-        { title: "Sub-heading 2.2", link: "/heading2/sub2" },
-        { title: "Sub-heading 2.3", link: "/heading2/sub3" }
+        // { title: "Sub-heading 2.1", link: "/heading2/sub1" },
+        // { title: "Sub-heading 2.2", link: "/heading2/sub2" },
+        // { title: "Sub-heading 2.3", link: "/heading2/sub3" }
       ]
     },
     {
-      heading: "Heading 4",
+      heading: "Security Admin Resources",
       subHeadings: [
-        { title: "Sub-heading 2.1", link: "/heading2/sub1" },
-        { title: "Sub-heading 2.2", link: "/heading2/sub2" },
-        { title: "Sub-heading 2.3", link: "/heading2/sub3" }
+        { title: "Inventory Discovery", link: "/heading2/sub1" },
+        { title: "Understanding Risks and Operational Insights", link: "/heading2/sub2" },
       ]
     },
-    {
-      heading: "Heading 5",
-      subHeadings: [
-        { title: "Sub-heading 2.1", link: "/heading2/sub1" },
-        { title: "Sub-heading 2.2", link: "/heading2/sub2" },
-        { title: "Sub-heading 2.3", link: "/heading2/sub3" }
-      ]
-    },
-    {
-      heading: "Heading 6",
-      subHeadings: [
-        { title: "Sub-heading 2.1", link: "/heading2/sub1" },
-        { title: "Sub-heading 2.2", link: "/heading2/sub2" },
-        { title: "Sub-heading 2.3", link: "/heading2/sub3" }
-      ]
-    },
+    // {
+    //   heading: "Heading 5",
+    //   subHeadings: [
+    //     { title: "Sub-heading 2.1", link: "/heading2/sub1" },
+    //     { title: "Sub-heading 2.2", link: "/heading2/sub2" },
+    //     { title: "Sub-heading 2.3", link: "/heading2/sub3" }
+    //   ]
+    // },
+    // {
+    //   heading: "Heading 6",
+    //   subHeadings: [
+    //     { title: "Sub-heading 2.1", link: "/heading2/sub1" },
+    //     { title: "Sub-heading 2.2", link: "/heading2/sub2" },
+    //     { title: "Sub-heading 2.3", link: "/heading2/sub3" }
+    //   ]
+    // },
     // Add more sections as needed #E7F1FF #A4D3F5
   ];
 
