@@ -8,5 +8,5 @@ Here is an _italic_ text.
 - Item 2
 - Item 3  
 
-<!-- ![Example Image](https://picsum.photos/200/300) -->
+![Example Image](https://picsum.photos/200/300)
 <!-- <img src="https://picsum.photos/200/300" alt="Example Image" /> -->

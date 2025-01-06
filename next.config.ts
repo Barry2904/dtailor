@@ -5,6 +5,10 @@ const nextConfig: NextConfig = {
   devIndicators: {
     appIsrStatus: true,
   },
+
+  images: {
+    domains: ['picsum.photos'], // Allow images from picsum.photos
+  },
 };
 
 export default nextConfig;
