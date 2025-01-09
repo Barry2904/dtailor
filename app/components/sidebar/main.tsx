@@ -1,6 +1,9 @@
 "use client";
 import { useState } from 'react';
 
+const config = require('../../../next.config')
+const base = config.basePath
+
 const Sidebar = () => {
   const [selected, setSelected] = useState<string | null>(null);
   const handleClick = (title: string) => {
@@ -10,9 +13,9 @@ const Sidebar = () => {
     {
       heading: "Welcome",
       subHeadings: [
-        { title: "Table of Content", link: "/heading1/sub1" },
-        { title: "Core Concepts", link: "/heading1/sub2" },
-        { title: "Release Notes", link: "/heading1/sub3" }
+        { title: "Table of Content", link: `${base}/heading1/sub1` },
+        { title: "Core Concepts", link: `${base}/heading1/sub2` },
+        { title: "Release Notes", link: `${base}/heading1/sub3` }
       ]
     },
     {
@@ -34,7 +37,7 @@ const Sidebar = () => {
     {
       heading: "Security Admin Resources",
       subHeadings: [
-        { title: "Inventory Discovery", link: "/heading2/sub1" },
+        { title: "Inventory Discovery", link: `${base}/heading2/sub1` },
         { title: "Understanding Risks and Operational Insights", link: "/heading2/sub2" },
       ]
     },
