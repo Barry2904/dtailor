@@ -19,7 +19,7 @@ interface PostProps {
 }
 
 const ImageRenderer = ({ src, alt }: { src: string; alt: string }) => {
-  return <Image src={src} alt={alt} width={800} height={600} />;
+  return <Image src={src} alt={alt} width={1000} height={100} />;
 };
 
 export default function Post({ params }: PostProps) {

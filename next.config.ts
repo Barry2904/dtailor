@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   },
 
   images: {
-    domains: ['picsum.photos'], // Allow images from picsum.photos
+    domains: ['picsum.photos','app.gitbook.com','files.gitbook.com'], // Allow images from picsum.photos
   },
 };
 
