@@ -7,8 +7,11 @@ const nextConfig: NextConfig = {
   },
 
   images: {
+    unoptimized: true,
     domains: ['picsum.photos','app.gitbook.com','files.gitbook.com'], // Allow images from picsum.photos
   },
+  output: 'export',
+  distDir: 'dist',
 };
 
 export default nextConfig;

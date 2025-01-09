@@ -87,11 +87,11 @@ import path from 'path';
 import ReactMarkdown from 'react-markdown';
 import Image from 'next/image';
 
-interface PostProps {
-  params: {
-    slug: string;
-  };
-}
+// interface PostProps {
+//   params: {
+//     slug: string;
+//   };
+// }
 
 const ImageRenderer = ({ src, alt }: { src: string; alt: string }) => {
   return (
@@ -108,7 +108,8 @@ const ImageRenderer = ({ src, alt }: { src: string; alt: string }) => {
   );
 };
 
-export default function Post({ params }: PostProps) {
+// export default function Post({ params }: PostProps) {
+export default function Post() {
   const filePath = path.join(process.cwd(), 'app', 'content', `example2.md`);
   const markdown = fs.readFileSync(filePath, 'utf-8');
 
@@ -211,4 +212,59 @@ export default function Post({ params }: PostProps) {
     </div>
   );
 }
+
+// 09/01/25
+// import React from 'react';
+// import fs from 'fs';
+// import path from 'path';
+// import ReactMarkdown from 'react-markdown';
+// import Image from 'next/image';
+
+// const ImageRenderer = ({ src, alt }: { src: string; alt: string }) => {
+//   return (
+//     <div className="my-6">
+//       <div className="relative w-full h-64 rounded-lg overflow-hidden">
+//         <Image 
+//           src={src} 
+//           alt={alt} 
+//           fill 
+//           className="object-cover" 
+//         />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default function Post() {
+//   // Specify the file name directly
+//   const filePath = path.join(process.cwd(), 'app', 'content', 'example2.md');
+//   const markdown = fs.readFileSync(filePath, 'utf-8');
+
+//   return (
+//     <div className="max-w-4xl mx-auto p-8 bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl shadow-lg">
+//       <div className="prose lg:prose-xl w-full">
+//         <ReactMarkdown
+//           components={{
+//             img: ({ node, ...props }) => (
+//               <ImageRenderer src={props.src || ''} alt={props.alt || ''} />
+//             ),
+//             h1: ({ node, ...props }) => (
+//               <h1 className="text-4xl font-extrabold text-blue-800 mb-6" {...props} />
+//             ),
+//             h2: ({ node, ...props }) => (
+//               <h2 className="text-2xl font-semibold text-blue-700 mb-4" {...props} />
+//             ),
+//             p: ({ node, children, ...props }) => (
+//               <p className="text-lg text-gray-700 mb-6 leading-relaxed" {...props}>
+//                 {children}
+//               </p>
+//             ),
+//           }}
+//         >
+//           {markdown}
+//         </ReactMarkdown>
+//       </div>
+//     </div>
+//   );
+// }
 
