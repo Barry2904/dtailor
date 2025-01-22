@@ -2,7 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const config = require('../../../next.config')
-const base = config.basePath
+const base = config.basePath || '';
 
 const Footer = () => {
     return(
@@ -12,6 +12,7 @@ const Footer = () => {
                     <Link href="/"> 
                         <Image 
                             src={`${base}/logo_text.png`}
+                            // src={`/logo_text.png`}
                             alt='logo'
                             width={150}
                             height={10}

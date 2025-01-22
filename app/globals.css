@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Changes to the overall UI can be done here. As you can see the scrollbar element is changed, but its behaviour differs from web browser to browser */
+
 /* Target all scrollbars globally */
 ::-webkit-scrollbar {
     width: 10px;

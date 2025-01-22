@@ -2,7 +2,7 @@
 import { useState } from 'react';
 
 const config = require('../../../next.config')
-const base = config.basePath
+const base = config.basePath || '';
 
 const Sidebar = () => {
   const [selected, setSelected] = useState<string | null>(null);
@@ -16,6 +16,9 @@ const Sidebar = () => {
         { title: "Table of Content", link: `${base}/heading1/sub1` },
         { title: "Core Concepts", link: `${base}/heading1/sub2` },
         { title: "Release Notes", link: `${base}/heading1/sub3` }
+        // { title: "Table of Content", link: `/heading1/sub1` },
+        // { title: "Core Concepts", link: `/heading1/sub2` },
+        // { title: "Release Notes", link: `/heading1/sub3` }
       ]
     },
     {
@@ -37,26 +40,26 @@ const Sidebar = () => {
     {
       heading: "Security Admin Resources",
       subHeadings: [
-        { title: "Inventory Discovery", link: `${base}/heading2/sub1` },
-        { title: "Understanding Risks and Operational Insights", link: "/heading2/sub2" },
+        // { title: "Inventory Discovery", link: `/heading2/sub1` },
+        // { title: "Understanding Risks and Operational Insights", link: "/heading2/sub2" },
       ]
     },
-    // {
-    //   heading: "Heading 5",
-    //   subHeadings: [
-    //     { title: "Sub-heading 2.1", link: "/heading2/sub1" },
-    //     { title: "Sub-heading 2.2", link: "/heading2/sub2" },
-    //     { title: "Sub-heading 2.3", link: "/heading2/sub3" }
-    //   ]
-    // },
-    // {
-    //   heading: "Heading 6",
-    //   subHeadings: [
-    //     { title: "Sub-heading 2.1", link: "/heading2/sub1" },
-    //     { title: "Sub-heading 2.2", link: "/heading2/sub2" },
-    //     { title: "Sub-heading 2.3", link: "/heading2/sub3" }
-    //   ]
-    // },
+    {
+      heading: "Other resources",
+      subHeadings: [
+        // { title: "Sub-heading 2.1", link: "/heading2/sub1" },
+        // { title: "Sub-heading 2.2", link: "/heading2/sub2" },
+        // { title: "Sub-heading 2.3", link: "/heading2/sub3" }
+      ]
+    },
+    {
+      heading: "Support",
+      subHeadings: [
+        { title: "Give Feedback", link: `${base}/feedback_form` },
+        // { title: "Sub-heading 2.2", link: "/heading2/sub2" },
+        // { title: "Sub-heading 2.3", link: "/heading2/sub3" }
+      ]
+    },
     // Add more sections as needed #E7F1FF #A4D3F5
   ];
 
