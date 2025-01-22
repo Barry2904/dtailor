@@ -1,8 +1,11 @@
+const config = require('../../../next.config')
+const base = config.basePath || '';
+
 const FeedBack = () =>{
     return(
         <div className="p-2 relative inline-block border-2 rounded-full"  style={{ borderColor: '#1E40AF' }}>
             <a 
-            href="/feedback_form" 
+            href = {`${base}/feedback_form`} 
             // target="_blank" 
             rel="noopener noreferrer" 
             aria-label="GitHub Profile"
