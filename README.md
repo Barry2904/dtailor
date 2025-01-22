@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+This is a Documentation Website
+Try it out yourself by following the installation guide
 
-## Getting Started
+## Installation Guide
 
-First, run the development server:
+1. Install [Node.js](https://nodejs.org/en/download)
+2. Clone the repo or download the .zip file
+3. Navigate to the /dtailor folder (`cd dtailor` in the terminal)
+4. Once in the `datilor` folder run `npm install` to install all the dependencies 
+5. Ensure that `node_modules` folder is created within the `datilor` folder
+6. Now run `npm run dev` in the terminal. The project runs in local system in development mode.
+7. Open browser of choice and type `http://localhost:3000`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Modifications
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+1. The project is made with the help of [Next.js](https://nextjs.org/). To understand more about the app routing feel free to check out the documentation [here](https://nextjs.org/docs)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+2. The `app` folder houses all the static elements related to the website.
+3. The `pages` folder is supposed to have all the logic for the backend connections
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. The `page.tsx` and the `layout.tsx`files are the base of the whole project 
 
-## Learn More
+5. Make changes to the `next.config.ts` file for it to be deployment ready
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+Check the [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Or use other providers
