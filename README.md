@@ -8,6 +8,7 @@ Try it out yourself by following the installation guide
 3. Navigate to the /dtailor folder (`cd dtailor` in the terminal)
 4. Once in the `datilor` folder run `npm install` to install all the dependencies 
 5. Ensure that `node_modules` folder is created within the `datilor` folder
+6. The `.md` files are in the `dtailor/app/content` folder
 6. Now run `npm run dev` in the terminal. The project runs in local system in development mode.
 7. Open browser of choice and type `http://localhost:3000`
 
