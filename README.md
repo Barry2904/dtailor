@@ -1,5 +1,5 @@
 This is a Documentation Website
-Try it out yourself by following the installation guide #
+Try it out yourself by following the installation guide 
 
 ## Installation Guide
 
